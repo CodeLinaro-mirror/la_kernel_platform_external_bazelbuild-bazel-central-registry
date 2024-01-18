@@ -1,0 +1,12 @@
+{
+    "homepage": "https://github.com/GoogleContainerTools/rules_distroless",
+    "maintainers": [],
+    "repository": [
+        "github:GoogleContainerTools/rules_distroless"
+    ],
+    "versions": [
+        "0.1.2",
+        "0.1.3"
+    ],
+    "yanked_versions": {}
+}

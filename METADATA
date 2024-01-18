@@ -1,0 +1,18 @@
+name: "bazel-central-registry"
+description:
+    "The default Bazel registry for the Bzlmod external dependency system of "
+    "Bazel. It is the recommended place to find and publish your favorite Bazel "
+    "projects. Visit https://registry.bazel.build to check what modules are "
+    "already available!"
+
+third_party {
+homepage: "https://registry.bazel.build/"
+  identifier {
+    type: "Git"
+    value: "https://github.com/bazelbuild/bazel-central-registry"
+    primary_source: true
+  }
+  version: "a26099e5ffa366811cb82240881f5bdb7648d1ca"
+  last_upgrade_date { year: 2024 month: 1 day: 11 }
+  license_type: NOTICE
+}
