@@ -12,7 +12,7 @@ homepage: "https://registry.bazel.build/"
     value: "https://github.com/bazelbuild/bazel-central-registry"
     primary_source: true
   }
-  version: "a26099e5ffa366811cb82240881f5bdb7648d1ca"
+  version: "e8c50094090d4f61dd095fa94c3605325ea9d07d"
   last_upgrade_date { year: 2024 month: 1 day: 11 }
   license_type: NOTICE
 }
