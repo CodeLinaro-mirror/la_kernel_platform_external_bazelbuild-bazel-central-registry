@@ -1,4 +1,3 @@
 {
-    "__comment_kleaf__": "This file intentionally diverge from upstream so it may be used as a local registry",
-    "module_base_path": "../.."
+    "mirrors": []
 }

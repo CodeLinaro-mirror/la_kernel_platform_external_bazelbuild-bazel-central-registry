@@ -1,4 +1,5 @@
 {
-    "path": "external/bazelbuild-rules_java",
-    "type": "local_path"
+    "integrity": "sha256-dkAqUK5oWdUL167YwbjvCdrlwQNbs8p9J29/POZZgYo=",
+    "strip_prefix": "",
+    "url": "https://github.com/bazelbuild/rules_java/releases/download/6.1.1/rules_java-6.1.1.tar.gz"
 }
