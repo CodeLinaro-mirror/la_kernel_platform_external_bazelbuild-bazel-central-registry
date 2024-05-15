@@ -1,18 +1,21 @@
-name: "bazel-central-registry"
-description:
-    "The default Bazel registry for the Bzlmod external dependency system of "
-    "Bazel. It is the recommended place to find and publish your favorite Bazel "
-    "projects. Visit https://registry.bazel.build to check what modules are "
-    "already available!"
+# This project was upgraded with external_updater.
+# Usage: tools/external_updater/updater.sh update external/bazelbuild-bazel-central-registry
+# For more info, check https://cs.android.com/android/platform/superproject/+/main:tools/external_updater/README.md
 
+name: "bazel-central-registry"
+description: "The default Bazel registry for the Bzlmod external dependency system of Bazel. It is the recommended place to find and publish your favorite Bazel projects. Visit https://registry.bazel.build to check what modules are already available!"
 third_party {
-homepage: "https://registry.bazel.build/"
+  license_type: NOTICE
+  last_upgrade_date {
+    year: 2024
+    month: 5
+    day: 15
+  }
+  homepage: "https://registry.bazel.build/"
   identifier {
     type: "Git"
     value: "https://github.com/bazelbuild/bazel-central-registry"
+    version: "d3c96f7c1a5e39d38908074fd2bc9bfd6f76acc3"
     primary_source: true
   }
-  version: "e421f1b2e9cfe25c9b43df55e3eaefbdfb367712"
-  last_upgrade_date { year: 2024 month: 2 day: 22 }
-  license_type: NOTICE
 }
