@@ -4,12 +4,14 @@
         {
             "email": "appu@google.com",
             "github": "loosebazooka",
-            "name": "Appu Goundan"
+            "name": "Appu Goundan",
+            "github_user_id": 1304826
         },
         {
             "email": "sahin@aspect.dev",
             "github": "thesayyn",
-            "name": "Şahin Yort"
+            "name": "\u015eahin Yort",
+            "github_user_id": 20563340
         }
     ],
     "repository": [
@@ -28,7 +30,9 @@
         "0.3.7",
         "0.3.8",
         "0.4.0",
-        "0.4.1"
+        "0.4.1",
+        "0.4.2",
+        "0.5.1"
     ],
     "yanked_versions": {}
 }
