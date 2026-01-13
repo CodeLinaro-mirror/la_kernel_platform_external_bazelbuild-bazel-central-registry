@@ -7,15 +7,15 @@ description: "The default Bazel registry for the Bzlmod external dependency syst
 third_party {
   license_type: NOTICE
   last_upgrade_date {
-    year: 2025
-    month: 7
-    day: 23
+    year: 2026
+    month: 1
+    day: 13
   }
   homepage: "https://registry.bazel.build/"
   identifier {
     type: "Git"
     value: "https://github.com/bazelbuild/bazel-central-registry"
-    version: "fdc0d993f8288d3a7519b47e1b84e183fc167a3c"
+    version: "a1cc47d5947d8d54a5bb17cf2906c3edd225f5da"
     primary_source: true
   }
 }
