@@ -434,7 +434,7 @@ module(
             shutil.copy(module.presubmit_yml, presubmit_yml)
         else:
             DEFAULT_PLATFORMS = ["debian11", "ubuntu2204", "macos", "macos_arm64", "windows"]
-            DEFAULT_BAZEL_VERSIONS = ["8.x", "7.x", "6.x"]
+            DEFAULT_BAZEL_VERSIONS = ["9.x", "8.x", "7.x"]
             platforms = module.matrix_platforms or DEFAULT_PLATFORMS
             bazel_versions = module.matrix_bazel_versions or DEFAULT_BAZEL_VERSIONS
             presubmit = {
@@ -505,7 +505,7 @@ module(
         current = source.get("patches", {}).keys()
         patch_files = [patch_dir / p for p in current]
         patch_files.extend(patch_dir / p for p in available if p not in current)
-        patches = {str(patch.relative_to(patch_dir)): integrity(read(patch)) for patch in patch_files}
+        patches = {patch.relative_to(patch_dir).as_posix(): integrity(read(patch)) for patch in patch_files}
         if patches:
             source["patches"] = patches
         else:
@@ -521,7 +521,7 @@ module(
                     if p.is_file() and p.name != "MODULE.bazel.lock"
                 ]
             )
-        overlay_integrities = {str(file): integrity(read(overlay_dir / file)) for file in overlay_files}
+        overlay_integrities = {file.as_posix(): integrity(read(overlay_dir / file)) for file in overlay_files}
         if overlay_files:
             source["overlay"] = overlay_integrities
         else:
