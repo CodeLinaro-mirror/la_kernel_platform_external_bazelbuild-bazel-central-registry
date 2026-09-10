@@ -8,14 +8,14 @@ third_party {
   license_type: NOTICE
   last_upgrade_date {
     year: 2026
-    month: 4
-    day: 22
+    month: 9
+    day: 8
   }
   homepage: "https://registry.bazel.build/"
   identifier {
     type: "Git"
     value: "https://github.com/bazelbuild/bazel-central-registry"
-    version: "f851f20d9996bf7ff0e471018ee8ace764ea767d"
+    version: "581784a7107fd04a9deffde0596ed3e8c24eb726"
     primary_source: true
   }
 }
